@@ -1,0 +1,150 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HideMe_SignUp" this:HideMe_SignUp.in_Email="rpa60486@gmail.com" this:HideMe_SignUp.in_Password="Rpa16000" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Email" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>834.4,760</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>HideMe_SignUp_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.NetIQeDirectory.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HideMe_SignUp" sap:VirtualizedContainerService.HintSize="512,695.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sign up | hide.me" sap:VirtualizedContainerService.HintSize="449.6,606.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a3b05f58-5977-40e3-9735-2ee80f3d3318" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,366.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT user_register_ema…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="a3b05f58-5977-40e3-9735-2ee80f3d3318" Text="rpa60486@gmail.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://member.hide.me/en/user/register" CvElementArea="660, 374, 617, 78" CvType="InputBox" DesignTimeRectangle="663, 375, 612, 74" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='user_register_email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user_register_email' tag='INPUT' type='text' class='form-control js-registration_email' placeholder='Email address' aaname='Email address' /&gt;" Guid="f1377ce5-9f0f-4922-81b0-11422e43f4cb" InformativeScreenshot="11718193d2c3e67603dd64fc993ecb05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign up | hide.me' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a3b05f58-5977-40e3-9735-2ee80f3d3318" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://member.hide.me/en/user/register" CvElementArea="660, 472, 615, 82" CvTextArea="918, 500, 101, 28" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="663, 474, 612, 77" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='user_register_save' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user_register_save' tag='BUTTON' type='submit' class='submit-btn js-registration_btn' aaname='Register' check:innerText='Register' /&gt;" Guid="a0361409-983f-48f8-98a6-7d55d86b5f18" InformativeScreenshot="6a9ea3a21ee08e5231358284fa063043.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign up | hide.me' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="cdbf11cb188e2e2a4b59f20912b726f4.jpg" Selector="&lt;html app='chrome.exe' title='Sign up | hide.me' /&gt;" Title="Sign up | hide.me" Url="https://member.hide.me/en/user/register" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
